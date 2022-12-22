@@ -1,0 +1,116 @@
+# Logfile created on 2022-12-22 09:33:59 -0800 by logger.rb/v1.5.0
+[bookshelf] [INFO] [2022-12-22 09:33:59 -0800] GET 200 24µs 127.0.0.1 / -
+[bookshelf] [INFO] [2022-12-22 09:34:35 -0800] GET 200 23µs 127.0.0.1 / -
+[bookshelf] [INFO] [2022-12-22 09:38:38 -0800] GET 200 12ms 127.0.0.1 / -
+[bookshelf] [INFO] [2022-12-22 09:45:48 -0800] GET 200 12ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2022-12-22 09:45:52 -0800] GET 200 9ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2022-12-22 09:47:33 -0800] GET 200 12ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2022-12-22 10:17:39 -0800] GET 200 1ms 127.0.0.1 / -
+[bookshelf] [INFO] [2022-12-22 10:17:39 -0800] GET 200 460µs 127.0.0.1 /books -
+[bookshelf] [INFO] [2022-12-22 10:18:39 -0800] GET 200 1ms 127.0.0.1 / -
+[bookshelf] [INFO] [2022-12-22 10:18:39 -0800] GET 200 473µs 127.0.0.1 /books -
+[bookshelf] [INFO] [2022-12-22 10:34:27 -0800] GET 200 24ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2022-12-22 10:34:50 -0800] GET 200 11ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2022-12-22 10:35:44 -0800] GET 200 12ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2022-12-22 10:36:08 -0800] GET 200 11ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2022-12-22 10:37:18 -0800] GET 200 12ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2022-12-22 10:51:32 -0800] GET 200 17ms 127.0.0.1 /books -
+[bookshelf] [INFO] [2022-12-22 10:51:46 -0800] GET 422 19ms 127.0.0.1 /books -
+  {:page=>"-1", :per_page=>"3000"}
+[bookshelf] [INFO] [2022-12-22 10:51:46 -0800] GET 200 2ms 127.0.0.1 /books -
+  {:page=>"1", :per_page=>"3"}
+[bookshelf] [INFO] [2022-12-22 11:00:23 -0800] GET 404 24µs 127.0.0.1 /books/1 -
+[bookshelf] [INFO] [2022-12-22 11:00:23 -0800] GET 404 15µs 127.0.0.1 /books/1 -
+[bookshelf] [INFO] [2022-12-22 11:00:29 -0800] GET 404 17µs 127.0.0.1 /books/1 -
+[bookshelf] [INFO] [2022-12-22 11:00:29 -0800] GET 404 11µs 127.0.0.1 /books/1 -
+[bookshelf] [ERROR] [2022-12-22 11:11:16 -0800] GET 500 0µs 127.0.0.1 /books/1 -
+  {:id=>"1"}
+  The relation does not contain any tuples (ROM::TupleCountMismatchError)
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rom-core-5.3.0/lib/rom/relation/loaded.rb:76:in `one!'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rom-core-5.3.0/lib/rom/relation/materializable.rb:49:in `one!'
+  /Users/michael/rails/06_rails_guide/bookshelf/app/actions/books/show.rb:16:in `handle'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hanami-controller-2.0.0/lib/hanami/action.rb:326:in `block in call'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hanami-controller-2.0.0/lib/hanami/action.rb:307:in `catch'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hanami-controller-2.0.0/lib/hanami/action.rb:307:in `call'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hanami-2.0.1/lib/hanami/slice/routing/resolver.rb:78:in `block in resolve_slice_action'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hanami-router-2.0.1/lib/hanami/router.rb:108:in `call'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/dry-monitor-1.0.1/lib/dry/monitor/rack/middleware.rb:36:in `block in call'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/dry-monitor-1.0.1/lib/dry/monitor/clock.rb:15:in `measure'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/dry-monitor-1.0.1/lib/dry/monitor/rack/middleware.rb:36:in `call'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hanami-router-2.0.1/lib/hanami/middleware/app.rb:40:in `call'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hanami-2.0.1/lib/hanami/slice.rb:758:in `call'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-test-2.0.2/lib/rack/test.rb:358:in `process_request'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-test-2.0.2/lib/rack/test.rb:165:in `custom_request'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-test-2.0.2/lib/rack/test.rb:114:in `get'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/3.1.0/forwardable.rb:238:in `get'
+  /Users/michael/rails/06_rails_guide/bookshelf/spec/requests/books/show_spec.rb:25:in `block (3 levels) in <top (required)>'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:263:in `instance_exec'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:263:in `block in run'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:511:in `block in with_around_and_singleton_context_hooks'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:468:in `block in with_around_example_hooks'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:486:in `block in run'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:626:in `block in run_around_example_hooks_for'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:352:in `call'
+  /Users/michael/rails/06_rails_guide/bookshelf/spec/support/database_cleaner.rb:14:in `block (3 levels) in <top (required)>'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/database_cleaner-core-2.0.1/lib/database_cleaner/strategy.rb:30:in `cleaning'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/3.1.0/forwardable.rb:238:in `cleaning'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/database_cleaner-core-2.0.1/lib/database_cleaner/cleaners.rb:34:in `block (2 levels) in cleaning'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/database_cleaner-core-2.0.1/lib/database_cleaner/strategy.rb:30:in `cleaning'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/3.1.0/forwardable.rb:238:in `cleaning'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/database_cleaner-core-2.0.1/lib/database_cleaner/cleaners.rb:34:in `block (2 levels) in cleaning'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/database_cleaner-core-2.0.1/lib/database_cleaner/cleaners.rb:35:in `cleaning'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/3.1.0/forwardable.rb:238:in `cleaning'
+  /Users/michael/rails/06_rails_guide/bookshelf/spec/support/database_cleaner.rb:13:in `block (2 levels) in <top (required)>'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:457:in `instance_exec'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:457:in `instance_exec'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:390:in `execute_with'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:628:in `block (2 levels) in run_around_example_hooks_for'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:352:in `call'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:629:in `run_around_example_hooks_for'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:486:in `run'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:468:in `with_around_example_hooks'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:511:in `with_around_and_singleton_context_hooks'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:259:in `run'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:646:in `block in run_examples'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:642:in `map'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:642:in `run_examples'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:607:in `run'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:608:in `block in run'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:608:in `map'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:608:in `run'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:121:in `map'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/configuration.rb:2070:in `with_suite_hooks'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:116:in `block in run_specs'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/reporter.rb:74:in `report'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:115:in `run_specs'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:89:in `run'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:71:in `run'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:45:in `invoke'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rspec-core-3.12.0/exe/rspec:4:in `<top (required)>'
+  /Users/michael/.rbenv/versions/3.1.2/bin/rspec:25:in `load'
+  /Users/michael/.rbenv/versions/3.1.2/bin/rspec:25:in `<top (required)>'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/lib/bundler/cli/exec.rb:58:in `load'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/lib/bundler/cli/exec.rb:58:in `kernel_load'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/lib/bundler/cli/exec.rb:23:in `run'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/lib/bundler/cli.rb:486:in `exec'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/lib/bundler/cli.rb:31:in `dispatch'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/lib/bundler/cli.rb:25:in `start'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/exe/bundle:48:in `block in <top (required)>'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/lib/bundler/friendly_errors.rb:120:in `with_friendly_errors'
+  /Users/michael/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/bundler-2.3.26/exe/bundle:36:in `<top (required)>'
+  /Users/michael/.rbenv/versions/3.1.2/bin/bundle:25:in `load'
+  /Users/michael/.rbenv/versions/3.1.2/bin/bundle:25:in `<main>'
+[bookshelf] [INFO] [2022-12-22 11:11:16 -0800] GET 404 17ms 127.0.0.1 /books/1 -
+  {:id=>"1"}
+[bookshelf] [INFO] [2022-12-22 11:11:16 -0800] GET 200 990µs 127.0.0.1 /books/1 -
+  {:id=>"1"}
+[bookshelf] [INFO] [2022-12-22 11:27:13 -0800] POST 422 33ms 127.0.0.1 /books -
+  {:book=>{:title=>nil}}
+[bookshelf] [INFO] [2022-12-22 11:27:13 -0800] POST 201 4ms 127.0.0.1 /books -
+  {:book=>{:title=>"Practical Object-Oriented Design in Ruby", :author=>"Sandi Metz"}}
